@@ -1,0 +1,11 @@
+
+{
+  "Home": {
+      "hello": "Welcome to Next.js!"
+  },
+  "label": {
+      "email": "Email",
+      "password": "Password",
+      "login": "Login"
+  }
+}
