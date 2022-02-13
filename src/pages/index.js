@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Head from '../components/head';
+import Head from '@/components/head.js';
 import { useTranslations } from 'next-intl';
 import {
   Grid,
@@ -12,12 +12,17 @@ import {
   Row,
 } from '@nextui-org/react';
 
+import random from '@/helper/random.js';
+
 export default function () {
   const h = useTranslations('Home');
   const t = useTranslations('label');
 
+  console.log(random.nextInt());
+
   return (
     <Container align="center">
+      <Head></Head>
       <h2>{h('hello')}</h2>
       <Input placeholder={t('email')} id="email" />
       <Spacer y={0.5} />
